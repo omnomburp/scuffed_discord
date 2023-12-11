@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord At Home Chat</title>
+  <link rel="stylesheet" href="../static/css/chatstyle.css">
+</head>
+<body onload="LoadServers()">
+  <div class="container">
+    <div class="sidebar">
+      <h2>Servers</h2>
+      <button class="server-name" id="create-button">+ Create Server</button>
+      <button class="server-name" id="join-button">+ Join Server</button>
+      <ul class="server-list">
+        </ul>
+    </div>
+    <div class="chatbox">
+      <div class="chat-history"></div>
+      <form class="chat-form">
+        <input type="text" placeholder="Type your message..." class="chat-input">
+        <button type="submit" class="chat-send-button">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="../static/js/chatscript.js"></script>
+</body>
+</html>

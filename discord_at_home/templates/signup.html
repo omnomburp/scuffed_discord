@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <script src="../static/js/script.js"></script>
+    <form>
+        <h2>Sign Up</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="userSignUp()">Sign Up</button>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+
+        <div id="myModal" class="overlay">
+            <div class="modal">
+                <p>Failed to Sign Up</p>
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
